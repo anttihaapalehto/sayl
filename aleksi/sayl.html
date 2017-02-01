@@ -15,7 +15,39 @@
   .tarinoita
   {
     margin: 1em;
+    padding: 0.5em;
     border: 0.5px solid black;
+  }
+  .top-bar{
+    background-color: #112e51;
+  }
+  .top-bar li{
+    background-color: #112e51;
+  }
+  .top-bar a{
+    color: white;
+    font-size: 90%;
+    background-color: #112e51;
+  }
+  .top-bar ul{
+    background-color: #112e51;
+  }
+  .otsikko{
+    margin-left: none;
+    
+  }
+  
+  @media screen and (min-width: 500px){
+    .top-bar a{
+    font-size: 125%;
+    }
+    .otsikko{
+    padding-right: 5em;
+    margin-right: 5em;
+    }
+    .kuva{
+    margin-left: 5em;
+    }
   }
 </style>
 </head>
@@ -42,7 +74,7 @@
 <div class="top-bar">
 <div class="top-bar-left">
 <ul class="menu">
-<li><a href="#">Etusivu</a></li>
+<li><a href="www.google.fi">Etusivu</a></li>
 <li><a href="#">Jäsenyys</a></li>
 <li><a href="#">Matkailu</a></li>
 <li><a href="#">Yhteystiedot</a></li>
@@ -54,18 +86,22 @@
 <div class="perkele">
 <div class="row">
 <div class="medium-4 columns">
-<img src="https://placehold.it/450x183&text=LOGO" alt="company logo">
+<div class="kuva">
+<img src="http://www.porinsuomiamerikkayhdistys.fi/images/logo.png?crc=164394229" alt="company logo">
+</div>
 </div>
 <div class="medium-8 columns">
-<img src="https://placehold.it/900x175&text=Responsive Ads - ZURB Playground/333" alt="advertisement for deep fried Twinkies">
+<div class="otsikko">
+<h1>SUOMI-AMERIKKA YHDISTYSTEN LIITTO</h1>
+</div>
 </div>
 </div>
 
 <br>
-<div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
-<button class="menu-icon" type="button" data-toggle></button>
-<div class="title-bar-title">Menu</div>
-</div>
+<div class="title-bar" data-responsive-toggle="main-menu"
+data-hide-for="medium">
+
+
 </header>
 <br>
 <div class="row">
@@ -89,25 +125,13 @@
 </div>
 <hr>
 <div class="row column">
-<h4 style="margin: 0;" class="text-center">>:(kuvia)</h4>
+
 </div>
-<hr>
+
 <div class="row small-up-3 medium-up-4 large-up-5">
-<div class="column">
-<img src="https://placehold.it/400x370&text=Look at me!" alt="image for article">
-</div>
-<div class="column">
-<img src="https://placehold.it/400x370&text=Look at me!" alt="image for article">
-</div>
-<div class="column">
-<img src="https://placehold.it/400x370&text=Look at me!" alt="image for article">
-</div>
-<div class="column show-for-medium">
-<img src="https://placehold.it/400x370&text=Look at me!" alt="image for article">
-</div>
-<div class="column show-for-large">
-<img src="https://placehold.it/400x370&text=Look at me!" alt="image for article">
-</div>
+
+<img src="http://sayl.fi/wp-content/uploads/2015/09/toast_bagel1940x1803.png" alt="image for article">
+
 </div>
 </div>
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
